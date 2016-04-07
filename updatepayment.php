@@ -20,7 +20,7 @@
 		# save to entry table
 		$mysqli->query("insert into entry (datetime, name, action, cashleft)" 
 			. " values (current_timestamp, '" . $_POST['name'] . "', "
-			. "'GBP" . $_POST['paidamt'] . "=+" . $newcash . "', " . $cleft . ")");
+			. "'GBP" . $_POST['paidamt'] . "', " . $cleft . ")");
 		# reload page to prevent resending of information
 		header("Location: updatepayment.php");
 	}

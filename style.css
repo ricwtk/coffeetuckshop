@@ -18,3 +18,6 @@ div {margin: auto;}
 .gbppaid, .submitpayment {display: inline-block;}
 .center {text-align: center}
 .left {text-align: left;}
+
+/*addnew.php*/
+.label {width: 100%; max-width: 8em; display: inline-block;}
