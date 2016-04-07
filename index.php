@@ -1,5 +1,5 @@
 <?php
-	$mysqli = new mysqli("localhost", "root", "root", "coffee");
+	$mysqli = new mysqli("localhost", "root", "root", "epgcoffee");
 	# if name is set
 	if (isset($_POST['name'])) {
 		# -1 from capsule left and save to table
@@ -47,8 +47,8 @@
 			$cres = $mysqli->query("select cashleft from cashleft where name = '" . $row['name'] . "'");
 			$cashleft = $cres->fetch_assoc()['cashleft'];
       # get capsule price
-      $res = $mysqli->query("select price from capsuleprice order by date desc");
-      $price = $res->fetch_assoc()['price'];
+      $pres = $mysqli->query("select price from capsuleprice order by date desc");
+      $price = $pres->fetch_assoc()['price'];
 			$capsuleleft = round($cashleft / $price, 1);
 			print "
 			<div class='namelist'>

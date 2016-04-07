@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
 	# activate with crontab everyday
-	$mysqli = new mysqli("localhost", "root", "root", "coffee");
+	$mysqli = new mysqli("localhost", "root", "root", "epgcoffee");
 	# get all names from namelist
 	$res = $mysqli->query('select * from namelist');
 	# loop through all names
