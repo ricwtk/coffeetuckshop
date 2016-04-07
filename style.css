@@ -1,0 +1,20 @@
+body {font-family: Oswald; font-size: 15pt; width: 100%; margin: 0}
+input[type='text'] {font-size: 15pt; font-family: Oswald}
+div {margin: auto;}
+.header {color:#fefcff; background: #002147; width: 100%; text-align: center; padding-top: 10pt; padding-bottom: 10pt;}
+.content {width: 90%; max-width: 1000pt}
+.namelist, .name, .avail, .consume {display: inline-block;}
+.name, .avail, .consume {padding: 10pt;}
+.name {width: 8em;}
+.avail {width: 10em; text-align: center;}
+.consume:after {content: '\2615';}
+.button {cursor: pointer; line-height: 1.5; margin: 1pt; padding: 0pt 5pt; background-color: #002147; color: white; display: inline-block}
+.button:hover {background-color: #A3C1AD}
+#chart_div {width: 100%; height: 400pt;}
+.paymentupdate {padding-top: 10pt; padding-bottom: 10pt;}
+
+/*updatepayment.php*/
+.gbppaid:before {content: '£';}
+.gbppaid, .submitpayment {display: inline-block;}
+.center {text-align: center}
+.left {text-align: left;}
